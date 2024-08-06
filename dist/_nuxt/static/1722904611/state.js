@@ -1,0 +1,1 @@
+window.__NUXT__=(function(a){return {staticAssetsBase:"\u002Fgayeongbusiness24\u002F_nuxt\u002Fstatic\u002F1722904611",layout:"default",error:a,serverRendered:true,routePath:"\u002F",config:{_app:{basePath:"\u002Fgayeongbusiness24\u002F",assetsPath:"\u002Fgayeongbusiness24\u002F_nuxt\u002F",cdnURL:a}}}}(null));
