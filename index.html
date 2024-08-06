@@ -1,24 +1,24 @@
-<!doctype html><html lang=""><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="/favicon.ico"><title>퍼블리셔 김가영 포트폴리오</title><link rel="shortcut icon" href="img/common/favicon.ico"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer"/><link rel="stylesheet" href="css/common/reset.css"><link rel="stylesheet" href="css/common/common.css"><link rel="stylesheet" href="css/common/layout.css"><link rel="stylesheet" href="css/main/main.css"><script defer="defer" src="/js/chunk-vendors.93dd7b65.js"></script><script defer="defer" src="/js/app.9065c5dd.js"></script><link href="/css/app.a0d14f12.css" rel="stylesheet"></head><body><noscript><strong>We're sorry but gayeongbusiness24.github.io doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id="progress_bar"></div><div class="custom_cursor"></div><div id="app"></div></body></html><script>// 커스텀 커서 요소 선택
-    const cursor = document.querySelector('.custom_cursor');
+<!doctype html><html lang=""><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="../src/assets/img/common/favicon.ico"><title>퍼블리셔 김가영 포트폴리오</title><link rel="shortcut icon" href="img/common/favicon.ico"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Gowun+Dodum&family=IBM+Plex+Sans+KR&family=Russo+One&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/common/reset.css"><link rel="stylesheet" href="css/common/common.css"><link rel="stylesheet" href="css/common/layout.css"><link rel="stylesheet" href="css/main/main.css"><script defer="defer" src="/js/chunk-vendors.1c5cbd09.js"></script><script defer="defer" src="/js/app.2e72e24b.js"></script><link href="/css/app.040a266a.css" rel="stylesheet"></head><body><noscript><strong>We're sorry but gayeongbusiness24.github.io doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id="progress_bar"></div><div id="app"></div></body></html><script>// // 커스텀 커서 요소 선택
+    // const cursor = document.querySelector('.custom_cursor');
     
-    // 특정 요소(a, button)에 hover 클래스 추가 및 제거
-    const interactiveElements = document.querySelectorAll('a, button');
+    // // 특정 요소(a, button)에 hover 클래스 추가 및 제거
+    // const interactiveElements = document.querySelectorAll('a, button');
     
-    interactiveElements.forEach(el => {
-        el.addEventListener('mouseover', () => {
-            cursor.classList.add('hover');
-        });
+    // interactiveElements.forEach(el => {
+    //     el.addEventListener('mouseover', () => {
+    //         cursor.classList.add('hover');
+    //     });
     
-        el.addEventListener('mouseout', () => {
-            cursor.classList.remove('hover');
-        });
-    });
+    //     el.addEventListener('mouseout', () => {
+    //         cursor.classList.remove('hover');
+    //     });
+    // });
     
-    // 마우스 이동 이벤트 리스너 추가
-    document.addEventListener('mousemove', (e) => {
-        cursor.style.left = `${e.clientX}px`;
-        cursor.style.top = `${e.clientY}px`;
-    });
+    // // 마우스 이동 이벤트 리스너 추가
+    // document.addEventListener('mousemove', (e) => {
+    //     cursor.style.left = `${e.clientX}px`;
+    //     cursor.style.top = `${e.clientY}px`;
+    // });
     
     document.addEventListener('scroll', () => {
         const progressBar = document.getElementById('progress_bar');
