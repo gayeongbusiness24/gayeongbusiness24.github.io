@@ -102,10 +102,11 @@
     .profile .list_icon:hover {transition: ease-in-out .1s;transform: translateY(-5px);}
     .profile .list_icon:hover .name {opacity: 1;}
     /* works */
-    .works .list_item .list_type01 {margin: 1.5rem 0;}
+    .works .list_item .list_type01 {min-height: 106px;margin: 1.5rem 0;}
     .works .list_item {width: calc(50% - 20px);}
     .works .list_item:nth-child(2n) {margin-left: 40px;}
     .works .list_item:not(:nth-child(n+1):nth-child(-n+2)) {margin-top: 40px;}
+    .works .list_item a {height: 100%;}
     .works .list_item .percent {font-size: 0.9rem;}
     .works .list_item .img {max-height: 350px;/*transition: max-height ease-out .3s;*/}
     /* hover */

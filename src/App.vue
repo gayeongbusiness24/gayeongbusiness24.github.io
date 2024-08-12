@@ -110,12 +110,14 @@
                                     <div class="img">
                                         <img :src="getImagePath(index)" :alt="result.title">
                                     </div>
-                                    <div class="cont">
-                                        <em class="list_small_title block">{{ result.form }}</em>
-                                        <strong class="list_title">{{ result.title }}</strong>
-                                        <span class="list_type01">
-                                            <small v-for="resultDesc in result.desc" :key="resultDesc" class="list_small flex">{{ resultDesc }}</small>
-                                        </span>
+                                    <div class="cont flex flex_between flex_column">
+                                        <div>
+                                            <em class="list_small_title block">{{ result.form }}</em>
+                                            <strong class="list_title">{{ result.title }}</strong>
+                                            <span class="list_type01">
+                                                <small v-for="resultDesc in result.desc" :key="resultDesc" class="list_small flex">{{ resultDesc }}</small>
+                                            </span>
+                                        </div>
                                         <div class="flex flex_between flex_a_center">
                                             <b class="percent btn btn_sm btn_round non_hover text_bold">기여도: {{ result.percent }}%</b>
                                             <span class="btn btn_md btn_arrow" aria-label="바로가기"></span>

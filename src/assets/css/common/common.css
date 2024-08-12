@@ -120,7 +120,7 @@ a img {display:block;}
 /* mobile */
 @media screen and (max-width: 720px){
     .inner {max-width: calc(100% - 30px);}
-    .list_type02::before {height: calc(100% - 40px);}
+    .list_type02::before {top: 50%;transform: translateY(-50%);height: calc(100% - 2.5rem);}
     .list_type03 .list_small {padding-left: 1.3rem;font-size: 0.9rem;}
     .list_type03 .list_small::before {left: 2px;width: 7px; height: 12px; border-bottom: 2px solid var(--main-theme); border-right: 2px solid var(--main-theme);}
     /* btn */
