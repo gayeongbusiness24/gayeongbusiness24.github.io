@@ -1,0 +1,67 @@
+/* progress bar */
+#progress_bar {position: fixed; top: 0; left: 0; width: 0; height: 4px; background-color: var(--main-theme); z-index: 12; opacity: 0; transition: width 0.25s ease-out, opacity 0.25s ease-out;}
+
+/* header */
+#header {position: fixed;top:0;left:0;width:100%;/*backdrop-filter: blur(5px);*/padding: 1rem 1.4rem;z-index: 10;}
+#header * {font-family: "DM Sans", sans-serif;font-optical-sizing: auto;font-weight: 500;font-style: normal;}
+#header .inner {position: relative;}
+#header .logo {padding: 0 1.2rem;border: 2px solid var(--border-dark);border-radius: 50%;background-color: #fff;font-weight: bold;}
+#header #nav {position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);padding: 0.6rem 2.5rem;border: 2px solid var(--border-dark);border-radius: 30px;background-color: #fff;}
+#header #nav .depth01 {background-size: auto 100%;background-position: 50% 50%;}
+#header #nav .depth01 + .depth01 {margin-left: 1rem;}
+#header #nav .depth01 a {position: relative;transition: ease-in .2s;padding: 0 0.7rem;font-weight: bold;}
+#header #nav .depth01.active a,
+#header #nav .depth01 a:hover {transition: ease-in .2s;color: var(--main-theme);}
+#header .icon_github {display:block;transition: ease-out .2s;width: 2.2rem;height: 2.2rem;border-radius: 50%;background: #fff url(../../img/common/icon/icon_github_b.png) 50% 50% / 100% auto;}
+#header .icon_github:hover {transition: ease-in .2s;background-image: url('../../img/common/icon/icon_github_main.png');}
+
+/* footer */
+#footer {border-top: var(--border-light);font-size: var(--small-size);}
+
+/* =========================
+    @media
+========================= */
+/* pc */
+@media screen and (min-width: 1351px) {
+}
+/* tablet */
+@media screen and (min-width: 721px) and (max-width: 1350px) {
+    #header {padding: 1rem 0}
+}
+@media screen and (min-width: 1025px) {
+    /* header */
+    #header .logo {font-size: 1.5rem;}
+    /* footer */
+    #footer {padding: 30px;}
+}
+@media screen and (min-width: 1025px) and (max-width: 1350px) {
+}
+@media screen and (min-width: 721px) and (max-width: 1024px) {
+}
+@media screen and (max-width: 1024px) {
+    /* header */
+    #header .logo {font-size: 20px;padding: 0 1rem;}
+    /* footer */
+    #footer {padding: 1rem 0;}
+}
+/* mobile */
+@media screen and (max-width: 720px) {
+    #header {padding: 1rem 0;}
+    #header #nav {padding: 0.3rem 1.3rem;}
+    #header #nav .depth01 {width: 1.4rem;height: 1.4rem;}
+    #header #nav .depth01 + .depth01 {margin-left: 0.85rem;}
+    #header #nav .depth01 a {width: 100%;height: 100%;background-size: auto 100%;background-repeat: no-repeat;text-indent: -999px;}
+    #header #nav .depth_profile {background-image: url(../../img/common/layout/profile.png);}
+    #header #nav .depth_works {background-image: url(../../img/common/layout/works.png);}
+    #header #nav .depth_contact {background-image: url(../../img/common/layout/contact.png);}
+
+}
+@media screen and (min-width: 321px) and (max-width: 720px) {
+}
+@media screen and (max-width: 320px) {
+    /* header */
+    #header #nav {padding: 0.3rem 1rem;}
+    #header #nav .depth01 + .depth01 {margin-left: 0.5rem;}
+    /* footer */
+    #footer {font-size: 0.8rem;}
+}
