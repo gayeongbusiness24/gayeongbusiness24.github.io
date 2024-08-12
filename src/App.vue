@@ -226,7 +226,7 @@ const worksList = ref([
             '전 페이지 반응형 작업',
             '배포 전 프로젝트 페이지입니다. 클릭 시 github 퍼블리싱 작업 코드 일부를 확인하실 수 있습니다.',
         ],
-        link: 'https://shop2.hyundai.com/submain/mycar',
+        link: 'https://github.com/gayeongbusiness24/nuxt-project',
         percent: 100,
         disabled: true,
         icon: true,
