@@ -66,7 +66,9 @@
 /* contact */
 .contact .inner {padding: 5rem 0;border-top: 1px solid var(--border-dark);}
 .contact .list_item + .list_item {margin-top: 1rem;}
-
+.contact .icon_notion.list_item {margin-top:1.7rem;}
+.contact .icon_notion a {display: block;width: 2rem;height: 2rem;background: url(../../img/common/icon/icon_notion.png) no-repeat 50% 50% / 100% auto;}
+.contact .icon_notion a:after {bottom: -0.5rem;}
 
 /* =========================
     @media
@@ -172,6 +174,9 @@
     .contact .inner {padding: 3.5rem 0;}
     .contact .section_content {margin-top: 1rem;}
     .contact .list_item + .list_item {margin-top: 0.5rem;}
+    .contact .list_item +.icon_notion {margin-top: 1rem;}
+    .contact .list_item +.icon_notion a {width: 1.5rem;height: 1.5rem;}
+    .contact .icon_notion a:after {bottom: -0.3rem;}
 }
 @media screen and (min-width: 321px) and (max-width: 720px) {
     .visual .section_title .text_bold {font-size: 3.5rem;line-height: 5rem;}

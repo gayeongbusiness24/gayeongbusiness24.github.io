@@ -144,6 +144,9 @@
                             <li class="list_item">
                                 <a href="tel:010-3931-3283" class="text_underline_hover">010.3931.3283</a>
                             </li>
+                            <li class="list_item icon_notion">
+                                <a href="https://upbeat-libra-abc.notion.site/9e7e7f1013fe4db6a36770908b505131" title="Notion 이력서" class="text_underline_hover" target="_blank"></a>
+                            </li>
                         </ul>
                     </article>
                 </div>
