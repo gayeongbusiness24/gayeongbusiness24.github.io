@@ -88,14 +88,11 @@ a img {display:block;}
     button
 ========================= */
 .btn {display: block;width: auto;transition: ease-out .1s;padding: 0 1.4rem;border: 1px solid var(--border-dark);background-color: #fff;text-align: center;}
-.btn:not(.non_hover):hover {transition: ease-in .1s;border-color: var(--main-theme);background-color: var(--main-theme);color: #fff;}
+.btn:not(.non_hover):not(.btn_arrow):hover {transition: ease-in .1s;border-color: var(--main-theme);background-color: var(--main-theme);color: #fff;}
 .btn_round {border-radius: 1.8rem;}
 .btn_sm {line-height: 2rem;font-size: var(--small-size);}
 .btn_md {line-height: 2.5rem;}
-.btn_lg {}
-.btn_xlg {}
-.btn_arrow {position: relative;width: 2rem;height: 2rem;padding:0;border-radius: 50%;background: transparent url(../../img/common/icon/icon_arrow_b.png) 50% 50% / 80% auto;}
-.btn_arrow:hover {background-image: url(../../img/common/icon/icon_arrow_w.png);}
+.btn_arrow {position: relative;width: 2rem;height: 2rem;padding:0;border-radius: 50%;background: transparent url(../../img/common/icon/icon_arrow_b.png) 50% 50% / 80% auto;transition: ease-in .2s;}
 
 /* tablet */
 @media screen and (min-width: 1351px) {

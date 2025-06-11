@@ -41,6 +41,7 @@
 .profile .list_icon .icon_html {background-image: url(../../img/main/profile/icon_html5.png);}
 .profile .list_icon .icon_gitlab {background-image: url(../../img/main/profile/icon_gitlab.png);}
 .profile .list_icon .icon_github {background-image: url(../../img/main/profile/icon_github.png);}
+.profile .list_icon .icon_redmine {background-image: url(../../img/main/profile/icon_redmine.png);}
 .profile .list_icon .icon_jenkins {background-image: url(../../img/main/profile/icon_jenkins.png);}
 .profile .list_icon .icon_figma {background-image: url(../../img/main/profile/icon_figma.png);}
 .profile .list_icon .icon_photoshop {background-image: url(../../img/main/profile/icon_photoshop.png);}
@@ -53,14 +54,20 @@
 .profile .list_icon .name {opacity: 0;position: absolute;left: 50%;transform: translateX(-50%);z-index: 1;margin-top: 0.3rem;padding: 0.2rem 0.7rem;border: 1px solid var(--border-dark);background-color: #fff;text-align: center;font-size: 0.8rem;}
 
 /* works */
-.works .list_item {overflow: hidden;border-top: 1px solid var(--border-dark);border-bottom: 1px solid var(--border-dark);}
-.works .list_item .img {position: relative;overflow: hidden;}
+.works .list_item {overflow: hidden;}
+.works .list_item .img {position: relative;overflow: hidden;border: 1px solid var(--border-light);border-radius: 8px;}
 .works .list_item img {width: 70%;margin: 0 auto;}
-.works .list_item .cont {padding: var(--padding-default);border-top: 1px solid var(--border-light);}
+.works .list_item .cont {padding: var(--padding-default);}
+.works .list_item .cont .bottom {padding-top: 20px;border-top: 1px solid var(--border-light);}
 .works .list_item .list_title {display:block;}
 .works .list_item .list_small_title {font-size: 0.9rem;margin-bottom: 5px;}
+.works .list_item .skill_list {display: flex;margin-bottom: 15px;}
+.works .list_item .skill_list li {display:flex;align-items:center;font-size: 14px;}
+.works .list_item .skill_list li + li {margin-left: 10px;}
+.works .list_item .skill_list li + li::before {content: '';display: inline-block;width: 1px;height: 70%;margin-right: 10px;background-color: black;}
 /* hover */
-.works .list_item:hover .btn_arrow {border-color: var(--main-theme);background-image: url(../../img/common/icon/icon_arrow_w.png);background-color: var(--main-theme);}
+.works .list_item .btn_arrow {transition: ease-in .2s;}
+.works .list_item:hover .btn_arrow {transform: translateX(5px);transition: ease-in .2s;}
 .works .list_item:hover .cont::after {width: 100%;}
 
 /* contact */
@@ -141,8 +148,11 @@
 
     /* works */
     .works .list_item {width: 100%;}
+    .works .list_item + .list_item {margin-top: 15px;}
     .works .list_item .list_type01 {margin: 1rem 0;}
     .works .list_item .percent {font-size: 0.8rem;}
+    .works .list_item .cont .bottom {margin-top: 15px;padding-top: 15px;}
+    .works .list_item .skill_list li {font-size: 0.75rem;}
     /* profile */
     .profile .list_icon_wrap {padding: 0 10px;}
     .profile .list_title {padding-bottom: 1rem;margin-bottom: 1rem;}
