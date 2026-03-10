@@ -22,7 +22,7 @@
                     <div class="section_title_wrap">
                         <h2 class="section_title">
                             <strong class="text_bold">PROFILE.</strong>
-                            <span class="text_bold">안녕하세요. <br />4년차 웹 퍼블리셔 <br />김가영입니다.</span>
+                            <span class="text_bold">안녕하세요. <br />5년차 웹 퍼블리셔 <br />김가영입니다.</span>
                         </h2>
                     </div>
                     <article class="section_content">
@@ -209,7 +209,11 @@ onUnmounted(() => {
 //history data
 const historyList = ref([
     {
-        date: '2024.09. ~ ',
+        date: '2025.09. ~ 2026.02.',
+        desc: '[프리랜서] 드리미소프트(주) 근무: 신한카드 쏠페이',
+    },
+    {
+        date: '2024.09. ~ 2025.09.',
         desc: '엠투엠글로벌(주) 근무',
     },
     {
@@ -230,6 +234,23 @@ const cmsList = ref(['cafe24', 'godomall'])
 
 // works data
 const worksList = ref([
+    {
+        form: 'App',
+        title: '신한카드 쏠페이',
+        desc: [
+            '신한카드 SolPay App 리뉴얼',
+            '공통 및 서브페이지 작업',
+            'vue2 -> vue3 migration',
+        ],
+        skillList: [
+            'Vue3',
+            'Typescript',
+            'Javascript',
+            'Sass(Scss)',
+        ],
+        link: 'https://www.shinhancard.com/pconts/html/mobile/mobileCard/appCard/R01/MOBFM10100R02.html?utm_source=google&utm_medium=sa&utm_campaign=solpay_pc_A&utm_content=solpayapp&utm_term=%EC%8B%A0%ED%95%9C%EC%B9%B4%EB%93%9C%EC%8F%A0%ED%8E%98%EC%9D%B4&gad_source=1',
+        percent: 10,
+    },
     {
         form: 'Adaptive',
         title: '세미마켓',
@@ -391,7 +412,8 @@ const filteredWorksList = computed(() => {
 
 // works imagePath
 function getImagePath(index){
-    return require(`@/assets/img/main/works/works_${index}.png`);
+    const reversedIndex = worksList.value.length - index;
+    return require(`@/assets/img/main/works/works_${reversedIndex}.png`);
 }
 
 // 첫 글자 대문자 변환

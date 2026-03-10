@@ -3,7 +3,7 @@
     <footer id="footer">
         <div class="inner text_center">
             <p>※ 상업적 목적 없이 포트폴리오용으로 제작된 페이지입니다.</p>
-            <p>© Copyright 2024 Gayeong Kim All Rights Reserved</p>
+            <p>© Copyright 2026 Gayeong Kim All Rights Reserved</p>
         </div>
     </footer>
     <!-- quick -->
