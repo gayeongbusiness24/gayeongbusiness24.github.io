@@ -209,6 +209,10 @@ onUnmounted(() => {
 //history data
 const historyList = ref([
     {
+        date: '2026.04. ~ 2026.09.',
+        desc: '타란 근무: 삼성SDS DS Portal(사내시스템)',
+    },
+    {
         date: '2025.09. ~ 2026.02.',
         desc: '드리미소프트(주) 근무: 신한카드 쏠페이',
     },
@@ -234,6 +238,22 @@ const cmsList = ref(['cafe24', 'godomall'])
 
 // works data
 const worksList = ref([
+    {
+        form: 'PC',
+        title: '삼성SDS DS Portal',
+        desc: [
+            '삼성SDS DS Portal 리뉴얼 맟 고도화',
+            '웹사이트 전체 작업',
+        ],
+        skillList: [
+            'Vue3',
+            'Typescript',
+            'Javascript',
+            'Sass(Scss)',
+        ],
+        link: 'javascript:void(0);',
+        percent: 33,
+    },
     {
         form: 'App',
         title: '신한카드 쏠페이',
